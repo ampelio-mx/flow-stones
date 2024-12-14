@@ -1,0 +1,24 @@
+<app-barra-menu></app-barra-menu>
+
+<div class="container-fluid contenedor-tipos-piedras">
+    <div class="row fila-tipos-piedras">
+        <div class="col-3 columna-tipos-piedras-menu">
+            <ul>
+                <li routerLink="/principal/tipos-piedras">Mármol</li>
+                <li routerLink="/principal/tipos-piedras-granito">Granito</li>
+                <li routerLink="/principal/tipos-piedras-cuarzo">Cuarzo</li> 
+            </ul>
+        </div>
+
+        <div class="col-6 columna-tipos-piedras-cards">
+            <app-card-tipos-piedras
+            *ngFor="let tiposPiedraInterfaz of interfazTiposPiedra"
+            [tiposPiedraInterfaz]="tiposPiedraInterfaz">
+
+            </app-card-tipos-piedras>
+        </div>
+
+    </div>
+</div>
+
+<app-footer></app-footer>

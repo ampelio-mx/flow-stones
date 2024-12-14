@@ -1,0 +1,38 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+.card-tipos-piedra {
+  width:16.333vw;
+  height: 29.333vh;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+
+  .imagen-card-tipos-piedra {
+    width: 100%;
+    height: 24.333vh;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+
+    img {
+      width: 21.333vh;
+      height: 21.333vh;
+    }
+  }
+
+  .label-card-tipos-piedra {
+    width: 100%;
+    height: 5vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    p {
+      font-size: 25px;
+    }
+  }
+}

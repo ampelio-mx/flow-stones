@@ -1,0 +1,701 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-pagina-inicio-principal {
+    margin-top: 12vh;
+    margin-bottom: 2vh;
+
+    .fila-pagina-inicio-principal {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border: 2.5px solid rgb(235, 235, 235);
+        box-shadow: 0 3px 7px 0px rgba(0, 0, 0, 0.3);
+
+        .columna-pagina-inicio-principal {
+            height: 85vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+
+            .contenedor-principal {
+                width: 100%;
+                height: 100%;
+
+                .carousel {
+                    height: 85vh;
+
+                    .carousel-indicators button {
+                        background-color: rgba(95, 95, 95, 1);
+                    }
+
+                    .carousel-inner {
+                        height: 85vh;
+
+                        .carousel-item {
+                            height: 85vh;
+                            position: relative;
+
+                            .carrusel-item-etiqueta {
+                                width: 44vw;
+                                height: 12vh;
+                                position: absolute;
+                                top: 48vh;
+                                left: 10vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                                border-radius: 15px;
+                                background-color: rgba(255, 255, 255, 0.5);
+
+                                h2 {
+                                    font-size: 82px;
+                                    font-family: "Corinthia", cursive;
+                                    color: rgba(141, 92, 0, 1);
+                                    font-weight: bold;
+                                    font-style: normal;
+                                    -webkit-text-stroke: 0.2px rgba(245, 245, 245, 1);
+                                    text-shadow: 3px 2px rgba(95, 95, 95, 0.7);
+                                }
+                            }
+
+                            .carrusel-item-texto {
+                                width: 44vw;
+                                height: 10vh;
+                                position: absolute;
+                                top: 60vh;
+                                left: 10vw;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                p {
+                                    font-size: 40px;
+                                    text-align: center;
+                                    letter-spacing: -0.4px;
+                                    word-spacing: 0px;
+                                    line-height: 1.6;
+                                    font-family: "Frank Ruhl Libre", serif;
+                                    color: rgb(255, 255, 255);
+                                    -webkit-text-stroke: 0.8px rgba(35, 35, 35, 1);
+                                    text-shadow: 3px 3px rgba(95, 95, 95, 0.5);
+                                    font-style: normal;
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+}
+
+.contenedor-pagina-inicio-galeria {
+    .fila-pagina-inicio-galeria {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        .columna-pagina-inicio-galeria {
+            height: 100vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+
+            .galeria-titulo {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 0.5px solid rgba(95, 95, 95, 1);
+
+                h2 {
+                    font-size: 72px;
+                    font-family: "Corinthia", cursive;
+                    color: rgba(141, 92, 0, 1);
+                    font-weight: bold;
+                    font-style: normal;
+                    -webkit-text-stroke: 0.3px rgba(245, 245, 245, 1);
+                    text-shadow: 2px 2px rgba(95, 95, 95, 0.5);
+                }
+            }
+
+            .contenedor-galeria {
+                width: 100%;
+                height: 90vh;
+                display: flex;
+                flex-wrap: wrap;
+
+                .galeria-card {
+                    width: 25%;
+                    height: 45vh;
+
+                    .galeria-card-imagen {
+                        width: 100%;
+                        height: 35vh;
+                        display: flex;
+                        justify-content: center;
+                        align-items: flex-end;
+
+                        img {
+                            width: 85%;
+                            height: 75%;
+                            box-shadow: 3px 3px 7px 3px rgba(95, 95, 95, 0.3),
+                                -3px 0px 7px 3px rgba(95, 95, 95, 0.3);
+                            ;
+                        }
+                    }
+
+                    .galeria-card-texto {
+                        width: 100%;
+                        height: 10vh;
+                        display: flex;
+                        flex-direction: row;
+                        justify-content: center;
+                        align-items: center;
+
+                        p {
+                            font-size: 22px;
+                            font-weight: lighter;
+                            color: rgb(56, 58, 185);
+                            margin-left: 1vh;
+                        }
+                    }
+                }
+
+            }
+        }
+    }
+}
+
+.contenedor-pagina-inicio-proveedores {
+    .fila-pagina-inicio-proveedores {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        height: 60vh;
+        padding: 5vh 0 5vh 0;
+
+        .columna-pagina-inicio-proveedores {
+            height: 50vh;
+            display: flex;
+            flex-direction: column;
+
+            .proveedores-titulo {
+                width: 100%;
+                height: 10vh;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                border-bottom: 0.5px solid rgba(95, 95, 95, 1);
+
+                h2 {
+                    font-size: 72px;
+                    font-family: "Corinthia", cursive;
+                    color: rgba(141, 92, 0, 1);
+                    font-weight: bold;
+                    font-style: normal;
+                    -webkit-text-stroke: 0.3px rgba(245, 245, 245, 1);
+                    text-shadow: 2px 2px rgba(95, 95, 95, 0.5);
+                }
+            }
+
+            .contenedor-proveedores {
+
+                width: 100%;
+                height: 40vh;
+                position: relative;
+                overflow: hidden;
+
+                .contenedor-proveedores-cards {
+                    width: 100%;
+                    height: 40vh;
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    animation: desplazar-card 60s linear infinite;
+
+                    @keyframes desplazar-card {
+                        from {
+                            transform: translateX(0);
+                        }
+
+                        to {
+                            transform: translateX(-200%);
+                        }
+                    }
+
+                    .proveedores-card {
+                        width: 20%;
+                        height: 30vh;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 5vh 2.5% 5vh 2.5%;
+
+                        .card-provedores-titulo {
+                            width: 100%;
+                            height: 20%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            h3 {
+                                font-size: 22px;
+                                font-weight: lighter;
+                            }
+                        }
+
+                        .card-provedores-imagen {
+                            width: 100%;
+                            height: 80%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .contenedor-proveedores-cards-dos {
+                    width: 100%;
+                    height: 40vh;
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    left: 100%;
+                    animation: desplazar-card-dos 60s linear infinite;
+
+                    @keyframes desplazar-card-dos {
+                        from {
+                            transform: translateX(0);
+                        }
+
+                        to {
+                            transform: translateX(-200%);
+                        }
+                    }
+
+                    .proveedores-card-dos {
+                        width: 20%;
+                        height: 30vh;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 5vh 2.5% 5vh 2.5%;
+
+                        .card-provedores-titulo-dos {
+                            width: 100%;
+                            height: 20%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            h3 {
+                                font-size: 22px;
+                                font-weight: lighter;
+                            }
+                        }
+
+                        .card-provedores-imagen-dos {
+                            width: 100%;
+                            height: 80%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+                .contenedor-proveedores-cards-tres {
+                    width: 100%;
+                    height: 40vh;
+                    display: flex;
+                    position: absolute;
+                    top: 0;
+                    left: 200%;
+                    animation: desplazar-card-tres 60s linear infinite;
+
+                    @keyframes desplazar-card-tres {
+                        from {
+                            transform: translateX(200);
+                        }
+
+                        to {
+                            transform: translateX(-200%);
+                        }
+                    }
+
+                    .proveedores-card-tres {
+                        width: 20%;
+                        height: 30vh;
+                        display: flex;
+                        flex-direction: column;
+                        margin: 5vh 2.5% 5vh 2.5%;
+
+                        .card-provedores-titulo-tres {
+                            width: 100%;
+                            height: 20%;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+
+                            h3 {
+                                font-size: 22px;
+                                font-weight: lighter;
+                            }
+                        }
+
+                        .card-provedores-imagen-tres {
+                            width: 100%;
+                            height: 80%;
+
+                            img {
+                                width: 100%;
+                                height: 100%;
+                            }
+                        }
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    //CONTAINER PRINCIPAL
+    .contenedor-pagina-inicio-principal {
+        .fila-pagina-inicio-principal {
+            .columna-pagina-inicio-principal {
+                height: 32vh;
+
+                .contenedor-principal {
+                    .carousel {
+                        height: 32vh;
+
+                        .carousel-indicators button {
+                            background-color: rgba(95, 95, 95, 1);
+                        }
+
+                        .carousel-inner {
+                            height: 32vh;
+
+                            .carousel-item {
+                                height: 32vh;
+
+                                .carrusel-item-etiqueta {
+                                    width: 86vw;
+                                    height: 6vh;
+                                    position: absolute;
+                                    top: 3vh;
+                                    left: 7vw;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: center;
+                                    border-radius: 15px;
+                                    background-color: rgba(255, 255, 255, 0.6);
+
+                                    h2 {
+                                        font-size: 40px;
+                                        text-align: center;
+                                        line-height: 1.6;
+                                        letter-spacing: -0.2px;
+                                        word-spacing: -0px;
+                                        color: rgb(141, 92, 0);
+                                        -webkit-text-stroke: 0.4px rgba(255, 255, 255, 0.9);
+                                        text-shadow: 1px 1px rgba(35, 35, 35, 0.7);
+                                    }
+                                }
+
+                                .carrusel-item-texto {
+                                    width: 85vw;
+                                    height: 4vh;
+                                    position: absolute;
+                                    top: 22vh;
+                                    left: 7.5vw;
+                                    display: flex;
+                                    justify-content: center;
+                                    align-items: flex-start;
+
+                                    p {
+                                        font-size: 18px;
+                                        text-align: center;
+                                        line-height: 1.6;
+                                        color: rgba(255, 255, 255, 1);
+                                        -webkit-text-stroke: 0.1px rgba(255, 255, 255, 0.5);
+                                        text-shadow: 3px 3px rgba(95, 95, 95, 0.3);
+                                    }
+                                }
+                            }
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    //CONTAINER PRINCIPAL
+
+    //CONTAINER GALERIA
+    .contenedor-pagina-inicio-galeria {
+        .fila-pagina-inicio-galeria {
+            .columna-pagina-inicio-galeria {
+                width: 100%;
+                height: 54vh;
+
+                .galeria-titulo {
+                    width: 100%;
+                    height: 10vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: 0px solid rgba(95, 95, 95, 1);
+
+                    h2 {
+                        font-size: 48px;
+                        letter-spacing: 2px;
+                    }
+                }
+
+                .contenedor-galeria {
+                    height: 44vh;
+                    flex-wrap: nowrap;
+                    overflow-x: auto;
+                    scroll-snap-type: x mandatory;
+                    -ms-overflow-style: none;
+                    scrollbar-width: none;
+                    background-color: rgba(245, 245, 245, 1);
+                    .galeria-card {
+                        width: 100%;
+                        height: 37vh;
+                        flex: 0 0 auto;
+                        scroll-snap-align: center;
+                        .galeria-card-imagen {
+                            height: 37vh;
+                            align-items: center;
+
+                            img {
+                                width: 80%;
+                                box-shadow: 3px 3px 10px 1px rgba(95, 95, 95, 0.2),
+                                    -3px 0px 10px 1px rgba(95, 95, 95, 0.2);
+                                ;
+                            }
+                        }
+
+                        .galeria-card-texto {
+                            height: 7vh;
+                            p {
+                                font-size: 22px;
+                                font-weight: normal;
+                            }
+                        }
+                    }
+
+                }
+            }
+        }
+    }
+
+    //CONTAINER GALERIA
+
+    //CONTAINER PROVEEDORES
+    .contenedor-pagina-inicio-proveedores {
+        .fila-pagina-inicio-proveedores {
+            .columna-pagina-inicio-proveedores {
+                width: 100%;
+
+                .proveedores-titulo {
+                    width: 100%;
+                    height: 10vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+                    border-bottom: none;
+
+                    h2 {
+                        font-size: 48px;
+                        letter-spacing: 2px;                    
+                    }
+                }
+
+                .contenedor-proveedores {
+
+                    width: 100%;
+                    height: 40vh;
+                    position: relative;
+                    overflow: hidden;
+
+                    .contenedor-proveedores-cards {
+                        width: 300%;
+                        height: 40vh;
+                        display: flex;
+                        position: absolute;
+                        top: 0;
+                        left: 0;
+                        overflow-x: auto;
+                        animation: desplazar-card 60s linear infinite;
+
+                        @keyframes desplazar-card {
+                            from {
+                                transform: translateX(0%);
+                            }
+
+                            to {
+                                transform: translateX(-300%);
+                            }
+                        }
+
+                        .proveedores-card {
+                            width: 20%;
+                            height: 30vh;
+                            display: flex;
+                            flex-direction: column;
+                            margin: 5vh 2.5% 5vh 2.5%;
+
+                            .card-provedores-titulo {
+                                width: 100%;
+                                height: 20%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                h3 {
+                                    font-size: 22px;
+                                    font-weight: lighter;
+                                }
+                            }
+
+                            .card-provedores-imagen {
+                                width: 100%;
+                                height: 80%;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    .contenedor-proveedores-cards-dos {
+                        width: 300%;
+                        height: 40vh;
+                        display: flex;
+                        position: absolute;
+                        top: 0;
+                        left: 300%;
+                        animation: desplazar-card-dos 60s linear infinite;
+
+                        @keyframes desplazar-card-dos {
+                            from {
+                                transform: translateX(0%);
+                            }
+
+                            to {
+                                transform: translateX(-600%);
+                            }
+                        }
+
+                        .proveedores-card-dos {
+                            width: 20%;
+                            height: 30vh;
+                            display: flex;
+                            flex-direction: column;
+                            margin: 5vh 2.5% 5vh 2.5%;
+
+                            .card-provedores-titulo-dos {
+                                width: 100%;
+                                height: 20%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                h3 {
+                                    font-size: 22px;
+                                    font-weight: lighter;
+                                }
+                            }
+
+                            .card-provedores-imagen-dos {
+                                width: 100%;
+                                height: 80%;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                    .contenedor-proveedores-cards-tres {
+                        width: 300%;
+                        height: 40vh;
+                        display: flex;
+                        position: absolute;
+                        top: 0;
+                        left: 600%;
+                        animation: desplazar-card-tres 60s linear infinite;
+
+                        @keyframes desplazar-card-tres {
+                            from {
+                                transform: translateX(0);
+                            }
+
+                            to {
+                                transform: translateX(-600%);
+                            }
+                        }
+
+                        .proveedores-card-tres {
+                            width: 20%;
+                            height: 30vh;
+                            display: flex;
+                            flex-direction: column;
+                            margin: 5vh 2.5% 5vh 2.5%;
+
+                            .card-provedores-titulo-tres {
+                                width: 100%;
+                                height: 20%;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+
+                                h3 {
+                                    font-size: 22px;
+                                    font-weight: lighter;
+                                }
+                            }
+
+                            .card-provedores-imagen-tres {
+                                width: 100%;
+                                height: 80%;
+
+                                img {
+                                    width: 100%;
+                                    height: 100%;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+
+            }
+        }
+    }
+
+    //CONTAINER PROVEEDORES
+}

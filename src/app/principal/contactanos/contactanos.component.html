@@ -1,0 +1,57 @@
+<app-barra-menu></app-barra-menu>
+
+<div class="container-fluid contenedor-contactanos">
+    <div class="row fila-contactanos">
+        <div class="col-9 columna-contactanos">
+
+            <form #formulario class="formulario-contacto" id="formulario-contacto-id" [formGroup]="datosFormulario" (ngSubmit)=" enviarFormulario(formulario);">
+                <fieldset class="formulario-contacto-fieldset-campos">
+
+                    <legend id="formulario-contacto-legend">
+                        <h3>Contactanos</h3>
+                    </legend>
+
+                    <input type="text" id="inputNombre" class="form-control formulario-login-input"
+                        placeholder="Ingresa tu nombre" required autofocus formControlName="nombreProspecto">
+                    <div class="formulario-login-conte-parrafo">
+                        <p class="formulario-login-parrafo">Ingresa tu nombre</p>
+                    </div>
+
+                    <input type="text" id="inputTelefono" class="form-control formulario-login-input"
+                        placeholder="Ingresa tu teléfono" required autofocus formControlName="telefonoProspecto">
+                    <div class="formulario-login-conte-parrafo">
+                        <p class="formulario-login-parrafo">Ingresa tu teléfono</p>
+                    </div>
+
+                    <input type="email" id="inputEMail" class="form-control formulario-login-input"
+                        placeholder="Ingresa tu e mail" required autofocus formControlName="emailProspecto">
+                    <div class="formulario-login-conte-parrafo">
+                        <p class="formulario-login-parrafo">Ingresa tu email</p>
+                    </div>
+
+                    <input type="file" id="archivoProspecto" class="form-control formulario-login-input"
+                        placeholder="Adjunta tu archivo" required autofocus (change)="onFileSelected($event)" >
+                    <div class="formulario-login-conte-parrafo">
+                        <p class="formulario-login-parrafo">Por favor, adjunta tu archivo</p>
+                    </div>
+
+                    <textarea id="contacto-mensaje-id" class="form-control formulario-contacto-mensaje-input"
+                        required autofocus formControlName="mensajeProspecto">
+                    </textarea>
+                    <div class="formulario-login-conte-parrafo">
+                        <p class="formulario-login-parrafo">Ingresa tu mensaje</p>
+                    </div>
+
+                </fieldset>
+
+                <fieldset class="formulario-contacto-fieldset-botones">
+                    <button class="formulario-login-boton"
+                        >Enviar</button>
+                </fieldset>
+
+            </form>
+
+        </div>
+    </div>
+</div>
+<app-footer></app-footer>

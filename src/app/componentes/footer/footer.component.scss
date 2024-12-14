@@ -1,0 +1,449 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-footer {
+    .fila-footer {
+        display: flex;
+        justify-content: center;
+        background-image: url('./../../../assets/imagenes/marble-wall.jpg');
+        background-size: cover;
+        background-repeat: repeat-x;
+        border-top: 1px solid rgba(95,95,95,0.3);
+
+        .columna-footer {
+            height: 30vh;
+
+
+            .footer-contenido {
+                width: 100%;
+                height: 100%;
+                display: flex;
+                flex-direction: row;
+                justify-content: center;
+                align-items: center;
+
+                .footer-contenido-contacto {
+                    width: 35%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .contacto-titulo {
+                        width: 80%;
+                        height: 20%;
+
+                        h2 {
+                            font-size: 28px;
+                            color: rgba(0, 0, 0, 1);
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                    }
+
+                    .contacto-lista {
+                        width: 80%;
+                        height: 60%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+
+                        .contacto-lista-telefono {
+                            width: 100%;
+                            height: 3vh;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+
+                            i,
+                            p {
+
+                                border: 1px solid rgba(130, 250, 114, 0);
+                            }
+                        }
+
+                        .contacto-lista-celular {
+                            width: 100%;
+                            height: 3vh;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .contacto-lista-mail {
+                            width: 100%;
+                            height: 3vh;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .contacto-lista-redes {
+                            width: 100%;
+                            height: 3vh;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+                        }
+
+                        .contacto-lista-redes-iconos {
+                            width: 100%;
+                            height: 6vh;
+                            display: flex;
+                            flex-direction: row;
+                            justify-content: center;
+                            align-items: center;
+
+                            .redes-iconos-facebook {
+                                width: 33.333%;
+                                height: 6vh;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .redes-iconos-instagram {
+                                width: 33.333%;
+                                height: 6vh;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+
+                            .redes-iconos-x {
+                                width: 33.333%;
+                                height: 6vh;
+                                display: flex;
+                                justify-content: center;
+                                align-items: center;
+                            }
+                        }
+                    }
+                }
+
+                .footer-contenido-metodos-pago {
+                    width: 35%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: center;
+
+                    .metodos-pago-titulo {
+                        width: 80%;
+                        height: 20%;
+
+                        h2 {
+                            font-size: 28px;
+                            color: rgba(0, 0, 0, 1);
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                    }
+
+                    .metodos-pago-lista {
+                        width: 80%;
+                        height: 60%;
+                        display: flex;
+                        flex-direction: column;
+
+                        .metodos-pago-caja {
+                            width: 100%;
+                            height: 33.33%;
+                            display: flex;
+                            flex-direction: row;
+
+                            .metodos-pago-texto {
+                                width: 60%;
+                                height: 100%;
+                            }
+
+                            .metodos-pago-imagenes {
+                                width: 40%;
+                                height: 100%;
+                            }
+
+                            .imagenes-tdc {
+                                display: flex;
+                                flex-direction: row;
+
+                                .imagen-mc {
+                                    width: 33.333%;
+                                    height: 100%;
+                                    background-image: url('./../../../assets/imagenes/mc.png');
+                                    background-size: 70%;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+
+                                .imagen-visa {
+                                    width: 33.333%;
+                                    height: 100%;
+                                    background-image: url('./../../../assets/imagenes/visa.png');
+                                    background-size: 70%;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+
+                                .imagen-ae {
+                                    width: 33.333%;
+                                    height: 100%;
+                                    background-image: url('./../../../assets/imagenes/ae.png');
+                                    background-size: 70%;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+
+                            .paypal {
+                                background-image: url('./../../../assets/imagenes/pp.png');
+                                background-size: 15%;
+                                background-repeat: no-repeat;
+                                background-position: center;
+                            }
+                        }
+                    }
+                }
+
+                .footer-contenido-legal {
+                    width: 30%;
+                    height: 100%;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    align-items: flex-start;
+                    
+                    .legal-titulo {
+                        width: 80%;
+                        height: 20%;
+
+                        h2 {
+                            font-size: 28px;
+                            color: rgba(0, 0, 0, 1);
+                            text-align: center;
+                            line-height: 1.5;
+                        }
+                    }
+
+                    .legal-lista {
+                        width: 80%;
+                        height: 60%;
+                        display: flex;
+                        flex-direction: column;
+                        align-items: center;
+                    }
+                }
+
+            }
+
+
+        }
+    }
+}
+
+@media (max-width:768px) {
+    .contenedor-footer {
+        .fila-footer {    
+            .columna-footer {
+                width: 100%;  
+                border: 1px solid salmon;
+                .footer-contenido {  
+
+                    .footer-contenido-contacto {
+                        width: 40%;
+                        border: 1px solid greenyellow;
+                        .contacto-titulo {
+                            width: 100%;
+                            height: 20%;                               
+                            border: 1px solid fuchsia;   
+                            h2 {
+                                font-size: 18px;
+                            }
+                        }
+    
+                        .contacto-lista {
+                            width: 100%;
+                            height: 80%;   
+                            border: 1px solid fuchsia; 
+                            .contacto-lista-telefono {
+                                border: 1px solid greenyellow;
+    
+                                i,
+                                p {
+                                    font-size: 10px;
+                                    border: 1px solid rgba(130, 250, 114, 0);
+                                }
+                            }
+    
+                            .contacto-lista-celular {
+                                width: 100%;
+                                border: 1px solid greenyellow;
+                                i,
+                                p {
+                                    font-size: 10px;
+                                    border: 1px solid rgba(130, 250, 114, 0);
+                                }
+                            }
+    
+                            .contacto-lista-mail {
+                                width: 100%;
+                                border: 1px solid greenyellow;
+                                i,
+                                p {
+                                    font-size: 10px;
+                                    border: 1px solid rgba(130, 250, 114, 0);
+                                }
+                            }
+    
+                            .contacto-lista-redes {
+                                width: 100%;
+                                border: 1px solid greenyellow;
+                                i,
+                                p {
+                                    font-size: 10px;
+                                    border: 1px solid rgba(130, 250, 114, 0);
+                                }
+                            }
+    
+                            .contacto-lista-redes-iconos {
+    
+                                .redes-iconos-facebook {
+                                    width: 33.333%;
+                                }
+    
+                                .redes-iconos-instagram {
+                                    width: 33.333%;
+                                }
+    
+                                .redes-iconos-x {
+                                    width: 33.333%;
+                                }
+                            }
+                        }
+                    }
+    
+                    .footer-contenido-metodos-pago {
+                        width: 30%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: center;
+                        border: 1px solid greenyellow;
+                        .metodos-pago-titulo {
+                            width: 80%;
+                            height: 20%;
+    
+                            h2 {
+                                font-size: 18px;
+                            }
+                        }
+    
+                        .metodos-pago-lista {
+                            width: 80%;
+                            height: 60%;
+                            display: flex;
+                            flex-direction: column;
+    
+                            .metodos-pago-caja {
+                                width: 100%;
+                                height: 33.33%;
+                                display: flex;
+                                flex-direction: row;
+    
+                                .metodos-pago-texto {
+                                    width: 60%;
+                                    height: 100%;
+                                }
+    
+                                .metodos-pago-imagenes {
+                                    width: 40%;
+                                    height: 100%;
+                                }
+    
+                                .imagenes-tdc {
+                                    display: flex;
+                                    flex-direction: row;
+    
+                                    .imagen-mc {
+                                        width: 33.333%;
+                                        height: 100%;
+                                        background-image: url('./../../../assets/imagenes/mc.png');
+                                        background-size: 70%;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                    }
+    
+                                    .imagen-visa {
+                                        width: 33.333%;
+                                        height: 100%;
+                                        background-image: url('./../../../assets/imagenes/visa.png');
+                                        background-size: 70%;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                    }
+    
+                                    .imagen-ae {
+                                        width: 33.333%;
+                                        height: 100%;
+                                        background-image: url('./../../../assets/imagenes/ae.png');
+                                        background-size: 70%;
+                                        background-repeat: no-repeat;
+                                        background-position: center;
+                                    }
+                                }
+    
+                                .paypal {
+                                    background-image: url('./../../../assets/imagenes/pp.png');
+                                    background-size: 15%;
+                                    background-repeat: no-repeat;
+                                    background-position: center;
+                                }
+                            }
+                        }
+                    }
+    
+                    .footer-contenido-legal {
+                        width: 30%;
+                        height: 100%;
+                        display: flex;
+                        flex-direction: column;
+                        justify-content: center;
+                        align-items: flex-start;
+                        border: 1px solid greenyellow;
+                        .legal-titulo {
+                            width: 80%;
+                            height: 20%;
+    
+                            h2 {
+                                font-size: 28px;
+                                color: rgba(0, 0, 0, 1);
+                                text-align: center;
+                                line-height: 1.5;
+                            }
+                        }
+    
+                        .legal-lista {
+                            width: 80%;
+                            height: 60%;
+                            display: flex;
+                            flex-direction: column;
+                            align-items: center;
+                        }
+                    }
+    
+                }
+    
+    
+            }
+        }
+    }
+}

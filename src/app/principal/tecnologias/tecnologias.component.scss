@@ -1,0 +1,146 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-tecnologias {
+    margin-top: 12vh;
+
+    .fila-tecnologias {
+        display: flex;
+        justify-content: center;
+
+        .columna-tecnologias {
+            display: flex;
+            flex-direction: column;
+            position: relative;
+
+            .contenedor-descripcion-tecnologias {
+                width: 100%;
+                height: 87vh;
+                display: flex;
+                flex-direction: column;
+
+                .descripcion-tecnologias-titulo {
+                    width: 100%;
+                    height: 15vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 82px;
+                        font-family: "Corinthia", cursive;
+                        color: rgba(141, 92, 0, 1);
+                        font-weight: bold;
+                        font-style: normal;
+                        -webkit-text-stroke: 0.2px rgba(245, 245, 245, 1);
+                        text-shadow: 2px 2px rgba(95, 95, 95, 0.5);
+                    }
+                }
+
+                .descripcion-tecnologias {
+                    width: 100%;
+                    height: 72vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    .descripcion-tecnologias-lista {
+                        width: 100%;
+                        height: 100%;
+                        padding: 12vh 12vw 12vh 12vw;
+
+                        ul {
+                            width: 100%;
+                            height: 100%;
+
+                            li {
+                                font-size: 36px;
+                                font-weight: bold;
+                                -webkit-text-stroke: 1px rgba(35, 35, 35, 1);
+                                letter-spacing: 4px;
+                                color: rgba(245, 245, 245, 1);
+                                text-shadow: 2px 2px rgba(95, 95, 95, 1);
+                            }
+                        }
+                    }
+                }
+
+            }
+
+            .contenedor-tecnologias-imagenes-background {
+                width: 100%;
+                height: 67vh;
+                display: flex;
+                flex-direction: row;
+                position: absolute;
+                top: 15vh;
+                left: 0;
+                background-image: url('./../../../assets/imagenes/tecnologias.jpg');
+                background-size: cover;
+                background-repeat: no-repeat;
+                filter: blur(3px);
+                z-index: -1;
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .contenedor-tecnologias {
+        .fila-tecnologias {
+            .columna-tecnologias {
+                width: 100%;
+
+                .contenedor-descripcion-tecnologias {
+                    height: 87vh;
+
+                    .descripcion-tecnologias-titulo {
+                        height: 10vh;
+
+                        h2 {
+                            font-size: 48px;
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    .descripcion-tecnologias {
+                        height: 77vh;
+
+                        .descripcion-tecnologias-lista {
+                            width: 90%;
+                            padding: 10vh 0vw 0vh 5vw;
+
+                            ul {
+                                width: 100%;
+                                height: 100%;
+
+                                li {
+                                    font-size: 22px;
+                                    -webkit-text-stroke: 0.5px rgba(0, 0, 0, 1);
+                                    letter-spacing: 1px;
+                                    word-spacing: 6px;
+                                    text-shadow: 1px 1px rgba(35, 35, 35, 1);
+                                    line-height: 2.5;
+                                }
+                            }
+                        }
+                    }
+
+                }
+
+                .contenedor-tecnologias-imagenes-background {
+                    height: 77vh;
+                    top: 10vh;
+                    left: 0;
+                    background-position: center;
+                    filter: blur(5px);
+                    z-index: -1;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,246 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.contenedor-equipo-trabajo {
+    margin-top: 12vh;
+
+    .fila-equipo-trabajo {
+        display: flex;
+        justify-content: center;
+
+        .columna-equipo-trabajo {
+            display: flex;
+            flex-direction: column;
+            background-color: rgba(255, 255, 255, 1);
+
+            .contenedor-descripcion-equipo-trabajo {
+                width: 100%;
+                height: 45vh;
+                display: flex;
+                flex-direction: column;
+
+                .descripcion-equipo-trabajo-titulo {
+                    width: 100%;
+                    height: 15vh;
+                    display: flex;
+                    justify-content: center;
+                    align-items: center;
+
+                    h2 {
+                        font-size: 82px;
+                        font-family: "Corinthia", cursive;
+                        color: rgba(141, 92, 0, 1);
+                        font-weight: bold;
+                        font-style: normal;
+                        -webkit-text-stroke: 0.2px rgba(245, 245, 245, 1);
+                        text-shadow: 2px 2px rgba(95, 95, 95, 0.5);
+                    }
+                }
+
+                .descripcion-equipo-trabajo {
+                    width: 100%;
+                    height: 30vh;
+                    display: flex;
+                    flex-direction: row;
+                    
+                    .descripcion-equipo-trabajo-texto {
+                        width: 55%;
+                        height: 100%;
+                        padding: 2vh 2vw 2vh 2vw;
+
+                        p {
+                            font-size: 18px;
+                            text-align: justify;
+                            line-height: 1.6;
+                        }
+                    }
+
+                    .descripcion-equipo-trabajo-lista {
+                        width: 45%;
+                        height: 100%;
+                        display: flex;
+                        justify-content: center;
+                        align-items: center;
+                        padding: 2vh 2vw 2vh 2vw;
+
+                        ul {
+                            width: 100%;
+                            height: 100%;
+                            li{
+                                font-size: 18px;
+                                text-align: justify;
+                                line-height: 1.6;
+                            }
+                        }
+
+                    }
+                }
+
+            }
+
+            .contenedor-equipo-trabajo-imagenes {
+                width: 100%;
+                height: 37vh;
+                margin: 2.5vh 0 2.5vh 0;
+                display: flex;
+                flex-direction: row;
+
+                .contenedor-equipo-trabajo-imagen {
+                    width: 33.333%;
+                    height: 100%;
+                    padding: 3vh 3vh 3vh 3vh;
+
+                    #imagen-equipo-uno {
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('./../../../assets/imagenes/equipo_trabajo_1.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        border-radius: 5px;
+                    }
+
+                    #imagen-equipo-dos {
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('./../../../assets/imagenes/equipo_trabajo_2.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        border-radius: 5px;
+                    }
+
+                    #imagen-equipo-tres {
+                        width: 100%;
+                        height: 100%;
+                        background-image: url('./../../../assets/imagenes/equipo_trabajo_3.jpg');
+                        background-size: cover;
+                        background-repeat: no-repeat;
+                        background-position: center;
+                        border-radius: 5px;
+                    }
+                }
+
+
+            }
+        }
+    }
+}
+
+@media (max-width:768px) {
+
+    .contenedor-equipo-trabajo {
+        .fila-equipo-trabajo {
+            .columna-equipo-trabajo {
+                width: 100%;
+                display: flex;
+                flex-direction: column;
+                background-color: rgba(255, 255, 255, 1);
+
+                .contenedor-descripcion-equipo-trabajo {
+                    width: 100%;
+                    height: 65vh;
+                    display: flex;
+                    flex-direction: column;
+
+                    .descripcion-equipo-trabajo-titulo {
+                        height: 10vh;
+
+                        h2 {
+                            font-size: 48px;
+                            letter-spacing: 2px;
+                        }
+                    }
+
+                    .descripcion-equipo-trabajo {
+                        width: 100%;
+                        height: 55vh;
+                        display: flex;
+                        flex-direction: column;
+
+                        .descripcion-equipo-trabajo-texto {
+                            width: 100%;
+                            height: 28vh;
+                            padding: 3vh 3vw 3vh 3vw;
+
+                            p {
+                                font-size: 16px;
+                                line-height: 1.6;
+                            }
+                        }
+
+                        .descripcion-equipo-trabajo-lista {
+                            width: 100%;
+                            height: 27vh;
+                            display: flex;
+                            justify-content: center;
+                            align-items: center;
+                            padding: 3vh 3vw 3vh 3vw;
+
+                            ul {
+                                width: 90%;
+                                height: 100%;
+
+                                li {
+                                    font-size: 16px;
+                                    line-height: 1.6;
+                                }
+                            }
+                        }
+                    }
+
+
+
+                }
+
+                .contenedor-equipo-trabajo-imagenes {
+                    width: 100%;
+                    height: 22vh;
+                    display: flex;
+                    flex-direction: row;
+
+                    .contenedor-equipo-trabajo-imagen {
+                        width: 33.333%;
+                        height: 100%;
+                        padding: 2vh 1vh 2vh 1vh;
+
+                        #imagen-equipo-uno {
+                            width: 100%;
+                            height: 100%;
+                            background-image: url('./../../../assets/imagenes/equipo_trabajo_1.jpg');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            border-radius: 5px;
+                        }
+
+                        #imagen-equipo-dos {
+                            width: 100%;
+                            height: 100%;
+                            background-image: url('./../../../assets/imagenes/equipo_trabajo_2.jpg');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            border-radius: 5px;
+                        }
+
+                        #imagen-equipo-tres {
+                            width: 100%;
+                            height: 100%;
+                            background-image: url('./../../../assets/imagenes/equipo_trabajo_3.jpg');
+                            background-size: cover;
+                            background-repeat: no-repeat;
+                            background-position: center;
+                            border-radius: 5px;
+                        }
+                    }
+
+
+                }
+            }
+        }
+    }
+}
